@@ -1,12 +1,12 @@
 {
-  "name": "react-typescript",
+  "name": "comment-section",
   "version": "1.0.0",
-  "description": "",
+  "description": "Logward Comment Section",
   "keywords": [
     "typescript",
-    "react",
-    "starter"
+    "react"
   ],
+  "homepage": "https://sethraj14.github.io/comment-section",
   "main": "src/index.tsx",
   "dependencies": {
     "date-fns": "3.3.1",
@@ -27,13 +27,16 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "gh-pages": "^6.1.1",
     "typescript": "4.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
