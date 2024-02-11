@@ -1,0 +1,139 @@
+.comments-section {
+  margin: 20px;
+}
+
+.comment-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  background-color: #e2e2e2;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-input__label {
+  text-align: left;
+  font-weight: semibold;
+  margin-bottom: 16px;
+}
+
+.comment-input__input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.comment-input__input::placeholder {
+  color: #999;
+}
+
+.comment-input__input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.comment-input__button {
+  align-self: flex-end;
+  width: auto;
+  padding: 10px 40px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.comment-input__button:hover {
+  background-color: #0056b3;
+}
+
+.comments-section__button {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: flex-start;
+  text-decoration: none;
+  margin: 10px 2px;
+  cursor: pointer;
+}
+
+.comment {
+  position: relative;
+  background-color: #e2e2e2;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 20px;
+  line-height: 0.2rem;
+  margin-bottom: 10px;
+}
+
+.comment-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.comment-name {
+  font-weight: bold;
+}
+
+.delete-btn {
+  position: absolute;
+  right: -10px;
+  border-radius: 100%;
+  padding: 6px;
+  background-color: gray;
+  cursor: pointer;
+}
+.comment-date {
+  align-self: flex-end;
+  font-size: 12px;
+}
+
+.comment-text {
+  align-self: flex-start;
+}
+
+.comment-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.reply-btn,
+.edit-btn {
+  align-self: flex-start;
+  padding: 5px 0px;
+  background-color: transparent;
+  color: #007bff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.reply-btn:hover,
+.edit-btn:hover {
+  background-color: transparent;
+}
+
+.comment-reply-input-container {
+  width: auto;
+  margin-left: 10%;
+}
